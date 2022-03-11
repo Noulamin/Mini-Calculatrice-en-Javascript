@@ -11,8 +11,6 @@ var temp = "";
 
 var is_null = false;
 
-var is_simple = false;
-
 function numbers_(number)
 {
     if(operation.includes("="))
@@ -51,12 +49,14 @@ function numbers_(number)
 
 function operation_(index)
 {
-
+    if(actual_number == "0")
+    {
+        numbers_(index);
+        return;
+    }
     is_null = true;
     if(first_number != 0 && actual_number != "0")
     {
-    
-
         if(index == "+")
         {
             result = first_number + parseFloat(actual_number);
@@ -65,16 +65,16 @@ function operation_(index)
             show_operation(operation);
             show_result(result);
         }
-        if(index == "−")
+        if(index == "-")
         {
             
             result = first_number - parseFloat(actual_number);
             first_number = result;
-            operation = result + " " + "-";
+            operation = result + " " + "−";
             show_operation(operation);
             show_result(result);
         }
-        if(index == "×")
+        if(index == "x")
         {
             result = first_number * parseFloat(actual_number);
             first_number = result;
@@ -109,7 +109,7 @@ function operation_(index)
 
 function equals()
 {
-    if(!operation.includes("+") && !operation.includes("−") && !operation.includes("×") && !operation.includes("÷"))
+    if(!operation.includes("+") && !operation.includes("-") && !operation.includes("x") && !operation.includes("÷"))
     {
         operation = actual_number + " " + "=";
         show_operation(operation);
@@ -146,7 +146,7 @@ function equals()
         }
 
         // -
-        if(operation.includes("−"))
+        if(operation.includes("-"))
         {
             if(operation.includes("="))
             {
@@ -173,7 +173,7 @@ function equals()
         }
 
         // x
-        if(operation.includes("×"))
+        if(operation.includes("x"))
         {
             if(operation.includes("="))
             {
