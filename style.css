@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+*{
+    font-family: 'Open Sans';
+    font-size: 1.5vw;
+    font-weight: bold;
+}
+
+body{
+    margin: 0px;
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 25vw;
+    height: 39vw;
+    background-color: #555555;
+    position: relative;
+    box-shadow: 0px 0px 20px 2px #888888;
+    position: relative;
+}
+
+.operations_and_numbers{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 22.36vw;
+}
+
+.row{
+    bottom: 0px;
+    width: 24.8vw;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.title{
+    font-size: 1.1vw;
+    font-weight: unset;
+    margin-top: 0.5vw;
+    margin-left: 1vw;
+}
+
+.head{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+p{
+    margin: 0px;
+    color: white;
+}
+
+.button_{
+    width: 5.9vw;
+    height: 4.2vw;
+    margin-top: 0.2vw;
+    border-radius: 0px;
+    background-color: #111111;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.button_equals{
+    width: 5.9vw;
+    height: 4.2vw;
+    margin-top: 0.2vw;
+    border-radius: 0px;
+    background-color: #34648A;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.button_operation{
+    width: 5.9vw;
+    height: 4.2vw;
+    margin-top: 0.2vw;
+    border-radius: 0px;
+    background-color: #323232;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.button_operation_minus{
+    width: 5.9vw;
+    height: 4.2vw;
+    margin-top: 0.2vw;
+    border-radius: 0px;
+    background-color: #323232;
+    outline: none;
+    border: none;
+    color: white;
+    padding-bottom: 1.7vw;
+}
+
+.bu_x{
+    display: inline-block;
+    width: 3.5vw;
+    height: 2.3vw;
+    background-color: #555555;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.bu_x:hover{
+    background-color: red;
+}
+
+.bu_max{
+    display: inline-block;
+    width: 3.5vw;
+    height: 2.3vw;
+    background-color: #555555;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.bu_min{
+    display: inline-block;
+    width: 3.5vw;
+    height: 2.3vw;
+    background-color: #555555;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+img{
+    max-width: 0.9vw;
+}
+
+.img_delete{
+    max-width: 1.6vw;
+}
+
+
+.operation{
+    margin-top: 5vw;
+    padding-right: 1.7vw;
+    float: right;
+    color: #BBBBBB;
+    font-size: 1.4vw;
+    height: 1.9vw;
+}
+
+.result{
+    float: right;
+    margin-top: 0.4vw;
+    font-size: 3vw;
+    position: absolute;
+    right: 1vw;
+    top: 9vw;
+}
+
+.bu_max:hover{
+    background-color: #757575;
+}
+
+.bu_min:hover{
+    background-color: #757575;
+}
+
+.bu_max:active{
+    background-color: #848484;
+}
+
+.bu_min:active{
+    background-color: #848484;
+}
+
+.button_:hover{
+    background-color: #757575;
+}
+
+.button_:active{
+    background-color: #848484;
+}
+
+.button_equals:hover{
+    background-color: #0975CA;
+}
+
+.button_equals:active{
+    background-color: #0A7CDA;
+}
+
+.button_operation:hover{
+    background-color: #757575;
+}
+
+.button_operation:active{
+    background-color: #848484;
+}
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/calc_icon.png">
+    <title>Calculator</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="head">
+                <p class="title">
+                    Calculator
+                </p>
+                <div>
+                    <button class="bu_min"> − </button><button class="bu_max"> <img src="images/square.png"> </button><button class="bu_x" onclick="close_()"> × </button>
+                </div>
+            </div>
+
+            <p class="operation" id="operation">
+                
+            </p>
+
+            <br>
+
+            <p class="result" id="result">
+                0
+            </p>
+
+            <div class="operations_and_numbers">
+                <div class="row">
+                    <button class="button_operation" onclick="operation_('%')">
+                        %
+                    </button>
+                    <button class="button_operation" onclick="clear_()">
+                        C
+                    </button>
+                    <button class="button_operation" onclick="delete_()">
+                        <img class="img_delete" src="images/delete.png">
+                    </button>
+                    <button class="button_operation" onclick="operation_('÷')">
+                        ÷
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button class="button_" onclick="numbers_('7')">
+                        7
+                    </button>
+                    <button class="button_" onclick="numbers_('8')">
+                        8
+                    </button>
+                    <button class="button_" onclick="numbers_('9')">
+                        9
+                    </button>
+                    <button class="button_operation" onclick="operation_('×')">
+                        ×
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button class="button_" onclick="numbers_('4')">
+                        4
+                    </button>
+                    <button class="button_" onclick="numbers_('5')">
+                        5
+                    </button>
+                    <button class="button_" onclick="numbers_('6')">
+                        6
+                    </button>
+                    <button class="button_operation" onclick="operation_('−')">
+                        −
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button class="button_" onclick="numbers_('1')">
+                        1
+                    </button>
+                    <button class="button_" onclick="numbers_('2')">
+                        2
+                    </button>
+                    <button class="button_" onclick="numbers_('3')">
+                        3
+                    </button>
+                    <button class="button_operation" onclick="operation_('+')">
+                        +
+                    </button>
+                </div>
+
+                <div class="row">
+                    <button class="button_">
+                        
+                    </button>
+                    <button class="button_" onclick="numbers_(0)">
+                        0
+                    </button>
+                    <button class="button_" onclick="numbers_('.')">
+                        .
+                    </button>
+                    <button class="button_equals" onclick="equals()">
+                        =
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="processing.js">
+
+</script>
+</html>
